@@ -9,8 +9,13 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans JP', sans-serif;   
+    font-family: 'Noto Sans JP', sans-serif;  
+    overflow: hidden;    
+    @media screen and (max-width: 760px){
+        overflow: auto;
+    }
 }
+
 
 main{
 background: url('../images/bg-pic.jpg');
@@ -29,7 +34,7 @@ width: 100%;
     }
 
 }
-
+ 
 
 .container{
     width: 80%;
@@ -180,7 +185,7 @@ a{
 
 .widget{
     width: 75%;
-    height: 79vh;
+    height: 700px;
     @media screen and (max-width: 960px) {
         width: 100%;
         margin-bottom: 5rem;

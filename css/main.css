@@ -5,6 +5,13 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Noto Sans JP', sans-serif;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    overflow: auto;
+  }
 }
 
 main {
@@ -240,7 +247,7 @@ a {
 
 .widget {
   width: 75%;
-  height: 79vh;
+  height: 700px;
 }
 
 @media screen and (max-width: 960px) {
