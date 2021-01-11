@@ -1,0 +1,451 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+main {
+  background: url("../images/bg-pic.jpg");
+  background-repeat: no;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+  main {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    height: 1100px;
+  }
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.mr {
+  margin-right: 9px;
+}
+
+.btn {
+  padding: .7rem 3rem;
+  border: none;
+  cursor: pointer;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: .8rem;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+@media screen and (max-width: 1353px) {
+  .btn {
+    padding: .7rem 1rem;
+  }
+}
+
+.btn:hover {
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+::-webkit-datetime-edit-text {
+  text-transform: uppercase;
+}
+
+::-webkit-datetime-edit-month-field {
+  color: gray;
+  text-transform: uppercase;
+}
+
+::-webkit-datetime-edit-day-field {
+  color: gray;
+  text-transform: uppercase;
+}
+
+::-webkit-datetime-edit-year-field {
+  color: gray;
+  text-transform: uppercase;
+}
+
+::-webkit-inner-spin-button {
+  display: block;
+}
+
+::-webkit-input-placeholder {
+  padding-left: 10px;
+}
+
+:-ms-input-placeholder {
+  padding-left: 10px;
+}
+
+::-ms-input-placeholder {
+  padding-left: 10px;
+}
+
+::placeholder {
+  padding-left: 10px;
+}
+
+.top-header {
+  border-bottom: 1px solid #b8b8b8;
+  height: 25px;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  line-height: 3;
+  margin-bottom: 1rem;
+  padding-top: 0.3rem;
+  padding-bottom: .3rem;
+}
+
+.top-heeader-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  max-height: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .top-heeader-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.top-heeader-container .left-menu {
+  margin: 0;
+}
+
+.top-heeader-container .left-menu a {
+  margin-right: .5rem;
+  padding-right: .5rem;
+  border-right: 1px solid white;
+}
+
+.top-heeader-container .social-media {
+  text-align: right;
+}
+
+@media screen and (max-width: 500px) {
+  .top-heeader-container .social-media {
+    display: none;
+  }
+}
+
+.top-heeader-container .social-media a {
+  margin-right: .7rem;
+}
+
+.top-heeader-container .social-media a:hover {
+  color: #960303;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.navigation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 960px) {
+  .navigation {
+    margin-bottom: 1rem;
+  }
+}
+
+.navigation .burger-container .burger {
+  text-align: right;
+}
+
+.navigation .burger-container .burger div {
+  width: 35px;
+  height: 2px;
+  background: #faf8f8;
+  margin-top: 5px;
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .navigation .burger-container .burger div {
+    display: block;
+  }
+}
+
+.navigation .logo {
+  color: white;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.navigation nav {
+  text-align: right;
+}
+
+@media screen and (max-width: 960px) {
+  .navigation nav {
+    display: none;
+  }
+}
+
+.navigation nav a {
+  margin-left: .9rem;
+}
+
+.navigation nav a.select {
+  border: 2px solid #c7c7c7;
+  padding: .5rem;
+}
+
+.navigation nav a span {
+  margin-right: .3rem;
+}
+
+.navigation nav a .select {
+  border: 3px solid black;
+}
+
+.navigation nav a:hover {
+  color: #585858;
+  border-bottom: 2px solid #960303;
+  padding-bottom: 10px;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.widget {
+  width: 75%;
+  height: 79vh;
+}
+
+@media screen and (max-width: 960px) {
+  .widget {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+}
+
+.widget .widget-navigation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  padding: .5rem 0;
+  width: 80%;
+  background: unset;
+}
+
+@media screen and (max-width: 960px) {
+  .widget .widget-navigation {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .widget .widget-navigation {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.widget .widget-navigation a.badge::after {
+  content: "save";
+  background: red;
+  width: 50px;
+  padding: 0 5px;
+  border-radius: 5px;
+  margin-left: 4px;
+}
+
+@media screen and (max-width: 1353px) {
+  .widget .widget-navigation a {
+    font-size: .8rem;
+  }
+}
+
+.widget .widget-navigation span {
+  margin-bottom: -8px;
+  background: #292727;
+  padding: .9rem .9rem;
+  border-right: 1px solid white;
+}
+
+.widget .widget-navigation span.selected {
+  background: #960303;
+}
+
+.widget .tab-panel {
+  display: none;
+}
+
+.widget .widget-body {
+  background: #dfdddd;
+  border-top: 3px #960303 solid;
+  padding: 3rem 3rem 2rem 3rem;
+}
+
+.widget .widget-body .first-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-bottom: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .widget .widget-body .first-row {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.widget .widget-body .first-row .title h1 {
+  font-size: 1.3rem;
+  margin-top: -1px;
+}
+
+.widget .widget-body .first-row .double-btn {
+  line-height: 2;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .widget .widget-body .first-row .double-btn {
+    text-align: left;
+  }
+}
+
+.widget .widget-body .first-row .btn-one {
+  color: white;
+  background: #960303;
+  margin-right: 0px;
+}
+
+.widget .widget-body .first-row .btn-two {
+  margin-left: -1px;
+  border: solid 1px rgba(168, 168, 168, 0.199);
+}
+
+.widget .widget-body .form .form-group {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 580px) {
+  .widget .widget-body .form .form-group {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.widget .widget-body .form .form-group .form-control input {
+  padding: .5rem .2rem;
+  width: 100%;
+  border: solid 1px rgba(168, 168, 168, 0.199);
+  outline: none;
+}
+
+.widget .widget-body .form .form-group .form-control p {
+  font-size: .8rem;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  color: #6e6e6e;
+}
+
+.widget .widget-body .form .form-group-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 580px) {
+  .widget .widget-body .form .form-group-2 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.widget .widget-body .form .form-group-2 .form-control input {
+  padding: .3rem .2rem;
+  width: 100%;
+  border: solid 1px rgba(168, 168, 168, 0.199);
+  outline: none;
+}
+
+.widget .widget-body .form .form-group-2 .form-control p {
+  font-size: .8rem;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  color: #6e6e6e;
+}
+
+.widget .widget-body .form .last-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 580px) {
+  .widget .widget-body .form .last-row {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.widget .widget-body .form .last-row .last-link {
+  text-align: right;
+}
+
+.widget .widget-body .form .last-row .last-link a {
+  color: #960303;
+  border-bottom: 2px solid #960303;
+}
+
+@media screen and (max-width: 580px) {
+  .widget .widget-body .form .last-row .last-link {
+    text-align: left;
+    padding-top: .5rem;
+  }
+}
+
+.widget .widget-body .form .last-row .btn-last-row {
+  color: white;
+  background: #960303;
+  font-weight: 500;
+}
+/*# sourceMappingURL=main.css.map */
