@@ -10,10 +10,6 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Sans JP', sans-serif;  
-    overflow: hidden;    
-    @media screen and (max-width: 760px){
-        overflow: auto;
-    }
 }
 
 
@@ -21,7 +17,7 @@ main{
 background: url('../images/bg-pic.jpg');
 background-repeat: no;
 background-size: cover;
-height: 100vh;
+height: 900px;
 width: 100%;
 @media screen and (max-width: 960px) {
     height: 100vh;
@@ -127,26 +123,11 @@ a{
 .navigation{
     display: grid;
     grid-template-columns: 1fr 3fr;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     @media screen and (max-width: 960px) {
         margin-bottom: 1rem;
     }
-    .burger-container{
-        
-       
-        .burger{
-            text-align: right;
-            div{
-                width: 35px;
-                height: 2px;
-                background: rgb(250, 248, 248);
-                margin-top: 5px;
-                display: none;
-                @media screen and (max-width: 960px) {
-                    display: block;
-                }
-            }
-        }
+
     }
    
     .logo{
@@ -179,13 +160,13 @@ a{
             transition: .8s;
         }
     }
-}
+
 
 // WIDGET
 
 .widget{
     width: 75%;
-    height: 700px;
+    height: 600px;
     @media screen and (max-width: 960px) {
         width: 100%;
         margin-bottom: 5rem;
